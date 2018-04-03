@@ -7,6 +7,7 @@
     "jest": "^22.4.2"
   },
   "scripts": {
-    "test:watch": "jest --watch"
+    "test:watch": "jest --watch",
+    "test":"jest"
   }
 }
