@@ -1,3 +1,8 @@
+const findDigit = require('../src/findDigit');
+
+it('should ', () => {
+    
+});
 // findDigit(5673, 4)     returns 5
 // findDigit(129, 2)      returns 2
 // findDigit(-2825, 3)    returns 8

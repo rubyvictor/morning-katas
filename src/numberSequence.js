@@ -1,4 +1,7 @@
 const numberSequence = index => {
+  if (index <= 0) {
+    throw new Error("random error");
+  }
   if (index < 3) {
     return index - 1;
   }

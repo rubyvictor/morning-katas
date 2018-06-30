@@ -9,17 +9,15 @@ describe("Tests for numbers in sequence", () => {
     expect(numberSequence(2)).toEqual(1);
   });
 
-  it("third number should be one", () => {
+  it("third number onwards should be the sum of previous two numbers", () => {
     expect(numberSequence(3)).toEqual(1);
-  });
-
-  it("fourth number should be two", () => {
     expect(numberSequence(4)).toEqual(2);
-  });
-
-  it("fifth number should be three", () => {
     expect(numberSequence(5)).toEqual(3);
   });
-});
 
-//first number in sequence is 0
+  it.only("throws an error when index is 0", () => {
+    expect(() => {
+      numberSequence(0);
+    }).toThrow("random error");
+  });
+});
